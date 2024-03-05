@@ -1,0 +1,18 @@
+# Projects I dont want to push
+DeepLearningPython/
+codecademy_1.py
+random_password_generator.py
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment folder
+venv/
+
+# Ignore local settings file
+.env
+
+# Ignore other generated files or directories
+*.log
