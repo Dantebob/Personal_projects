@@ -2,11 +2,8 @@
 import argparse
 
 parser=argparse.ArgumentParser(
-    description='''Provide the size of the square board you want and the number of times the knight can move.
-      The scrypt will show what squares the knight can move to in the given number of moves.''',
-    epilog="""epilog""")
-parser.add_argument('--foo', type=int, default=42, help='FOO!')
-parser.add_argument('bar', nargs='*', default=[1, 2, 3], help='BAR!')
+    description="""Provide the size of the square board you want and the number of times the knight can move.\n
+                    The scrypt will show what squares the knight can move to in the given number of moves.""")
 args=parser.parse_args()
 
 import sys
@@ -14,7 +11,7 @@ import sys
 if len(sys.argv) > 3:
     print("Too many arguements.")
 
-board_size = 11
+board_size = 8
 waves = 1
 if len(sys.argv) > 1:
     board_size = int(sys.argv[1])
